@@ -4,8 +4,9 @@
  */
 
 import { Platform } from 'react-native';
+import { studentPortalTheme } from './studentPortalTheme';
 
-const tintColorLight = '#0a7ea4';
+const tintColorLight = studentPortalTheme.primary;
 const tintColorDark = '#fff';
 
 export const Colors = {
@@ -18,12 +19,12 @@ export const Colors = {
     tabIconSelected: tintColorLight,
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    text: studentPortalTheme.text,
+    background: studentPortalTheme.gradient.colors[2],
+    tint: studentPortalTheme.primary,
+    icon: studentPortalTheme.mutedText,
+    tabIconDefault: 'rgba(236, 246, 255, 0.45)',
+    tabIconSelected: studentPortalTheme.primary,
   },
 };
 
